@@ -1,1 +1,23 @@
 Detail about Project Structure:
+
+my-maven-project/
+│
+├── pom.xml                    # Project Object Model - defines dependencies, plugins, project metadata, etc.
+│
+├── src/
+│   ├── main/
+│   │   ├── java/              # Your main application code (organized by package)
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── App.java
+│   │   ├── resources/         # Configuration files and other non-code resources (e.g., application.properties)
+│   │
+│   └── test/
+│       ├── java/              # Unit and integration test code
+│       │   └── com/
+│       │       └── example/
+│       │           └── AppTest.java
+│       └── resources/         # Test-specific resource files
+│
+└── target/                    # Compiled bytecode, JARs, reports (generated after `mvn package`)
+
